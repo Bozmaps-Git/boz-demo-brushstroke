@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brushstroke Decorators | Painters &amp; Decorators in Bristol</title>
+<meta name="description" content="Brushstroke Decorators are trusted painters and decorators in Bristol. Interior, exterior and commercial painting, wallpapering and spray finishes. Free no-obligation quotes." />
+<link rel="canonical" href="https://boz-demo-brushstroke.vercel.app" />
+<meta name="theme-color" content="#f24e1e" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Brushstroke Decorators" />
+<meta property="og:title" content="Brushstroke Decorators | Painters &amp; Decorators in Bristol" />
+<meta property="og:description" content="Trusted Bristol painters and decorators. Interior, exterior and commercial work with a clean, craftsman finish. Free quotes." />
+<meta property="og:url" content="https://boz-demo-brushstroke.vercel.app" />
+<meta property="og:image" content="https://picsum.photos/seed/brushstroke-og/1200/630" />
+<meta property="og:locale" content="en_GB" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Brushstroke Decorators | Painters &amp; Decorators in Bristol" />
+<meta name="twitter:description" content="Trusted Bristol painters and decorators. Interior, exterior and commercial work with a clean, craftsman finish. Free quotes." />
+<meta name="twitter:image" content="https://picsum.photos/seed/brushstroke-og/1200/630" />
+
+<!-- Inline SVG favicon: a paint roller / swatch -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23131316'/%3E%3Crect x='6' y='6' width='9' height='9' rx='2' fill='%23f24e1e'/%3E%3Crect x='17' y='6' width='9' height='9' rx='2' fill='%23ffc83d'/%3E%3Crect x='6' y='17' width='9' height='9' rx='2' fill='%2300a884'/%3E%3Crect x='17' y='17' width='9' height='9' rx='2' fill='%233e6df2'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- JSON-LD: LocalBusiness HousePainter + AggregateRating -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["HousePainter", "LocalBusiness", "Painter"],
+  "name": "Brushstroke Decorators",
+  "image": "https://picsum.photos/seed/brushstroke-og/1200/630",
+  "@id": "https://boz-demo-brushstroke.vercel.app",
+  "url": "https://boz-demo-brushstroke.vercel.app",
+  "telephone": "+441179001234",
+  "email": "hello@brushstrokedecorators.co.uk",
+  "priceRange": "££",
+  "description": "Painters and decorators in Bristol offering interior, exterior and commercial painting, wallpapering and spray finishes.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14 Gloucester Road",
+    "addressLocality": "Bishopston, Bristol",
+    "addressRegion": "Bristol",
+    "postalCode": "BS7 8AA",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.4720,
+    "longitude": -2.5870
+  },
+  "areaServed": "Bristol and surrounding areas",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/brushstrokedecorators",
+    "https://www.instagram.com/brushstrokedecorators"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "187",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Brushstroke SVG defs reused across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="brush-clip" clipPathUnits="objectBoundingBox">
+      <path d="M0.02,0.18 C0.18,0.02 0.4,0.14 0.55,0.08 C0.72,0.02 0.9,0.1 0.98,0.3 C1,0.55 0.92,0.78 0.78,0.9 C0.6,1 0.35,0.94 0.2,0.96 C0.06,0.98 -0.02,0.6 0.02,0.18 Z" />
+    </clipPath>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Brushstroke Decorators home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="34" height="34">
+          <rect x="3" y="3" width="11" height="11" rx="2.5" fill="#f24e1e"/>
+          <rect x="18" y="3" width="11" height="11" rx="2.5" fill="#ffc83d"/>
+          <rect x="3" y="18" width="11" height="11" rx="2.5" fill="#00a884"/>
+          <rect x="18" y="18" width="11" height="11" rx="2.5" fill="#3e6df2"/>
+        </svg>
+      </span>
+      <span class="brand-name">Brushstroke<span class="brand-accent">.</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#before-after">Before &amp; After</a></li>
+        <li><a href="#calculator">Get a Price</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-call mobile-only" href="tel:+441179001234">Call us</a>
+    </nav>
+
+    <a class="btn btn-primary header-cta desktop-only" href="#contact">Free quote</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Bristol painters &amp; decorators · Est. 2009</p>
+        <h1 id="hero-heading">A fresh coat,<br><span class="brushed">done properly.</span></h1>
+        <p class="lead">Interior, exterior and commercial decorating across Bristol. Tidy, time-served tradespeople, honest pricing and a finish that lasts. No mess left behind, ever.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#calculator">Get an instant estimate</a>
+          <a class="btn btn-ghost" href="#work">See our work</a>
+        </div>
+        <ul class="hero-trust">
+          <li><strong>4.9★</strong> 187 reviews</li>
+          <li><strong>15 yrs</strong> in Bristol</li>
+          <li><strong>£5m</strong> public liability</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="paint-card">
+          <img src="https://picsum.photos/seed/brushstroke-hero/720/900" alt="" loading="eager" width="720" height="900" />
+          <span class="drip drip-a"></span>
+          <span class="drip drip-b"></span>
+        </div>
+        <div class="swatch-strip">
+          <span style="--c:#f24e1e"></span>
+          <span style="--c:#ffc83d"></span>
+          <span style="--c:#00a884"></span>
+          <span style="--c:#3e6df2"></span>
+          <span style="--c:#131316"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trustbar" aria-label="Accreditations">
+    <div class="container trustbar-inner">
+      <span>Dulux Select Decorator</span>
+      <span>TrustMark Registered</span>
+      <span>Checkatrade Verified</span>
+      <span>Fully Insured · £5m PL</span>
+      <span>DBS Checked Team</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-heading">Decorating, the way it should be done</h2>
+        <p class="section-sub">From a single feature wall to a full commercial repaint, every job gets the same prep, patience and pride.</p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card reveal" style="--accent:#f24e1e">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg>
+          </span>
+          <h3>Interior Painting</h3>
+          <p>Walls, ceilings, woodwork and feature walls finished crisply, with dust sheets down and edges cut by hand.</p>
+          <ul class="tick"><li>Plaster &amp; filler prep</li><li>Low-VOC paints</li><li>Same-day clean-up</li></ul>
+        </article>
+
+        <article class="service-card reveal" style="--accent:#3e6df2">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V9l8-6 8 6v11"/><path d="M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg>
+          </span>
+          <h3>Exterior &amp; Render</h3>
+          <p>Weather-tough masonry, render and timber coatings that protect your home through every Bristol winter.</p>
+          <ul class="tick"><li>Pressure washing</li><li>Repairs &amp; pointing</li><li>Scaffold managed</li></ul>
+        </article>
+
+        <article class="service-card reveal" style="--accent:#00a884">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>
+          </span>
+          <h3>Commercial</h3>
+          <p>Offices, shops, lettings and communal areas. Out-of-hours scheduling so your business never pauses.</p>
+          <ul class="tick"><li>Evening &amp; weekend</li><li>Minimal disruption</li><li>RAMS provided</li></ul>
+        </article>
+
+        <article class="service-card reveal" style="--accent:#ffc83d">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v6H4z"/><path d="M4 10v10h16V10"/><path d="M8 14h8"/></svg>
+          </span>
+          <h3>Wallpaper &amp; Murals</h3>
+          <p>Feature walls, heritage papers and bespoke murals hung dead straight with seams you simply won't find.</p>
+          <ul class="tick"><li>Pattern matching</li><li>Lining &amp; sizing</li><li>Specialist papers</li></ul>
+        </article>
+
+        <article class="service-card reveal" style="--accent:#9b5de5">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+          </span>
+          <h3>Spray Finishes</h3>
+          <p>Factory-smooth airless spraying for kitchens, doors and ceilings, with full masking and dust control.</p>
+          <ul class="tick"><li>Kitchen respray</li><li>Doors &amp; trim</li><li>Mirror-flat finish</li></ul>
+        </article>
+
+        <article class="service-card reveal" style="--accent:#f15bb5">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.1L12 17l-5.5 2.3 1-6.1L3 8.9 9 8z"/></svg>
+          </span>
+          <h3>Colour Consultancy</h3>
+          <p>Not sure on the shade? We'll bring sample pots and a trained eye so you commit with confidence.</p>
+          <ul class="tick"><li>Home visit</li><li>Sample testing</li><li>Scheme advice</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="section section-tint" id="before-after" aria-labelledby="ba-heading">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">See the difference</p>
+        <h2 id="ba-heading">Before &amp; after</h2>
+        <p class="section-sub">Drag the handle to reveal the transformation. Real Bristol homes, real finishes.</p>
+      </header>
+
+      <div class="ba-wrap reveal">
+        <div class="ba-slider" id="baSlider" role="slider" tabindex="0"
+             aria-label="Before and after comparison slider"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <img class="ba-img ba-after" src="https://picsum.photos/seed/ba-after/1200/720" alt="Freshly painted, bright living room after decorating" />
+          <div class="ba-before-wrap" id="baBeforeWrap">
+            <img class="ba-img ba-before" src="https://picsum.photos/seed/ba-before/1200/720" alt="Tired, dated living room before decorating" />
+          </div>
+          <span class="ba-tag ba-tag-before">Before</span>
+          <span class="ba-tag ba-tag-after">After</span>
+          <div class="ba-handle" id="baHandle" aria-hidden="true">
+            <span class="ba-line"></span>
+            <span class="ba-grip">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#131316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6M9 6l6 6-6 6" opacity="0"/><path d="M9 7l-4 5 4 5M15 7l4 5-4 5"/></svg>
+            </span>
+          </div>
+        </div>
+        <p class="ba-hint">Tip: use ← and → keys when focused.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="work" aria-labelledby="work-heading">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Recent projects</p>
+        <h2 id="work-heading">Our work around Bristol</h2>
+        <p class="section-sub">A snapshot of the homes, shops and offices we've freshened up.</p>
+      </header>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="exterior">Exterior</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- items injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE CALCULATOR -->
+  <section class="section section-dark" id="calculator" aria-labelledby="calc-heading">
+    <div class="container calc-layout">
+      <div class="calc-intro reveal">
+        <p class="eyebrow eyebrow-light">Instant ballpark</p>
+        <h2 id="calc-heading">Quote calculator</h2>
+        <p class="section-sub light">Get a rough idea in seconds. Slide, pick and see an estimate. For a firm price, send the details over and we'll confirm, usually same day.</p>
+        <ul class="calc-points">
+          <li>No obligation, no spam</li>
+          <li>Free home survey included</li>
+          <li>Fixed written quote to follow</li>
+        </ul>
+      </div>
+
+      <form class="calc-card reveal" id="calcForm" novalidate>
+        <div class="field">
+          <label for="calcType">Type of work</label>
+          <div class="seg" role="group" aria-label="Type of work">
+            <input type="radio" id="typeInt" name="calcType" value="interior" checked>
+            <label for="typeInt">Interior</label>
+            <input type="radio" id="typeExt" name="calcType" value="exterior">
+            <label for="typeExt">Exterior</label>
+            <input type="radio" id="typeCom" name="calcType" value="commercial">
+            <label for="typeCom">Commercial</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="calcRooms">Number of rooms / areas: <output id="roomsOut">3</output></label>
+          <input type="range" id="calcRooms" min="1" max="12" value="3" step="1">
+        </div>
+
+        <div class="field">
+          <label for="calcSize">Average room size</label>
+          <select id="calcSize">
+            <option value="1">Small (box / WC)</option>
+            <option value="1.6" selected>Medium (bedroom)</option>
+            <option value="2.4">Large (lounge)</option>
+            <option value="3.4">Extra large (open plan)</option>
+          </select>
+        </div>
+
+        <div class="field field-row">
+          <label class="check"><input type="checkbox" id="calcCeil" checked> Ceilings included</label>
+          <label class="check"><input type="checkbox" id="calcWood"> Woodwork &amp; doors</label>
+        </div>
+
+        <div class="calc-result" aria-live="polite">
+          <span class="calc-result-label">Estimated price range</span>
+          <strong class="calc-result-value" id="calcOut">£900 – £1,200</strong>
+          <span class="calc-result-note">Indicative only · materials &amp; access vary</span>
+        </div>
+
+        <a class="btn btn-primary btn-block" href="#contact" id="calcToContact">Book a free survey</a>
+      </form>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section-tint" id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Loved by locals</p>
+        <h2 id="reviews-heading">What Bristol says</h2>
+        <p class="section-sub">
+          <span class="rating-summary" aria-label="Average rating 4.9 out of 5 from 187 reviews">
+            <span class="stars" aria-hidden="true" data-rating="5"></span>
+            <strong>4.9</strong> from 187 reviews
+          </span>
+        </p>
+      </header>
+      <div class="reviews-grid" id="reviewsGrid"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOKING -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact-layout">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Let's talk colour</p>
+        <h2 id="contact-heading">Request your free quote</h2>
+        <p class="section-sub">Tell us about your project and we'll get back to you, usually within a few hours during the working week.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="ci-icon" aria-hidden="true">📞</span>
+            <span><span class="ci-label">Call</span><a href="tel:+441179001234">0117 900 1234</a></span>
+          </li>
+          <li>
+            <span class="ci-icon" aria-hidden="true">💬</span>
+            <span><span class="ci-label">WhatsApp</span><a href="https://wa.me/441179001234?text=Hi%20Brushstroke%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener">Message us</a></span>
+          </li>
+          <li>
+            <span class="ci-icon" aria-hidden="true">✉️</span>
+            <span><span class="ci-label">Email</span><a href="mailto:hello@brushstrokedecorators.co.uk">hello@brushstrokedecorators.co.uk</a></span>
+          </li>
+          <li>
+            <span class="ci-icon" aria-hidden="true">📍</span>
+            <span><span class="ci-label">Studio</span>14 Gloucester Road, Bishopston, Bristol, BS7 8AA</span>
+          </li>
+        </ul>
+
+        <div class="map-frame">
+          <iframe
+            title="Map showing Brushstroke Decorators on Gloucester Road, Bristol"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.6010%2C51.4660%2C-2.5730%2C51.4780&amp;layer=mapnik&amp;marker=51.4720%2C-2.5870"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <form class="contact-card reveal" id="quoteForm" novalidate>
+        <div class="field">
+          <label for="name">Your name *</label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" />
+          <span class="error" data-for="name"></span>
+        </div>
+        <div class="field-grid">
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" />
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" />
+            <span class="error" data-for="phone"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option>Interior painting</option>
+            <option>Exterior &amp; render</option>
+            <option>Commercial</option>
+            <option>Wallpaper &amp; murals</option>
+            <option>Spray finishes</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Tell us about the job *</label>
+          <textarea id="message" name="message" rows="4" required aria-required="true" placeholder="e.g. Two bedrooms and a hallway, walls and ceilings, looking to start next month."></textarea>
+          <span class="error" data-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send my request</button>
+        <p class="form-note">By sending you agree to be contacted about your enquiry. We never share your details.</p>
+        <div class="form-success" id="formSuccess" role="status" hidden>
+          <strong>Thanks, that's landed! 🎨</strong>
+          <span>We've got your request and will be in touch shortly. (Demo form, nothing was actually sent.)</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="container cta-inner">
+      <h2>Ready for a fresh coat?</h2>
+      <p>Book a free, no-pressure survey with a Bristol decorator who actually turns up.</p>
+      <div class="cta-actions">
+        <a class="btn btn-light" href="tel:+441179001234">Call 0117 900 1234</a>
+        <a class="btn btn-ghost-light" href="#contact">Request a quote</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand brand-footer">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30">
+            <rect x="3" y="3" width="11" height="11" rx="2.5" fill="#f24e1e"/>
+            <rect x="18" y="3" width="11" height="11" rx="2.5" fill="#ffc83d"/>
+            <rect x="3" y="18" width="11" height="11" rx="2.5" fill="#00a884"/>
+            <rect x="18" y="18" width="11" height="11" rx="2.5" fill="#3e6df2"/>
+          </svg>
+        </span>
+        <span class="brand-name">Brushstroke<span class="brand-accent">.</span></span>
+      </a>
+      <p class="footer-tag">Painters &amp; decorators bringing colour to Bristol homes and businesses since 2009.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/brushstrokedecorators" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/brushstrokedecorators" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/441179001234" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.3 7.3 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-1 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.6a3.6 3.6 0 0 0 1.6.1c.5-.1 1.4-.6 1.6-1.1a2 2 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Visit / Post</h3>
+      <address>
+        Brushstroke Decorators<br>
+        14 Gloucester Road<br>
+        Bishopston, Bristol<br>
+        BS7 8AA<br>
+        <a href="tel:+441179001234">0117 900 1234</a><br>
+        <a href="mailto:hello@brushstrokedecorators.co.uk">hello@brushstrokedecorators.co.uk</a>
+      </address>
+    </div>
+
+    <div class="footer-col">
+      <h3>Opening hours</h3>
+      <ul class="hours">
+        <li><span>Mon – Fri</span><span>8:00 – 18:00</span></li>
+        <li><span>Saturday</span><span>9:00 – 13:00</span></li>
+        <li><span>Sunday</span><span>Closed</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul class="foot-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#calculator">Get a price</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year">2026</span> Brushstroke Decorators. All rights reserved.</p>
+      <p>Demo site built by <a href="https://bozapps.co.uk" target="_blank" rel="noopener">BozApps — bozapps.co.uk</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close image">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+  <figure class="lb-figure">
+    <img id="lbImg" src="" alt="" />
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
