@@ -1,3 +1,6 @@
+
+function __lf(s,w,h){var n=0,x=String(s);for(var i=0;i<x.length;i++){n=(n*31+x.charCodeAt(i))>>>0;}return 'https://loremflickr.com/'+w+'/'+h+'/paint?lock='+(n%100000);}
+function __av(s){return 'https://i.pravatar.cc/200?u=brushstroke'+encodeURIComponent(String(s));}
 /* ============================================================
    Brushstroke Decorators — demo interactions (vanilla JS)
 ============================================================ */
@@ -139,7 +142,7 @@
     grid.innerHTML = projects.map(function (p, i) {
       return '<button class="portfolio-item" data-cat="' + p.cat + '" data-index="' + i + '" ' +
         'aria-label="View project: ' + p.title + '">' +
-        '<img src="https://picsum.photos/seed/' + p.seed + '/640/480" alt="' + p.title + '" loading="lazy" width="640" height="480">' +
+        '<img src="' + __lf(p.seed, 640, 480) + '" alt="' + p.title + '" loading="lazy" width="640" height="480">' +
         '<span class="pi-overlay"><span class="pi-cat">' + catLabel[p.cat] + '</span>' +
         '<span class="pi-title">' + p.title + '</span></span></button>';
     }).join('');
@@ -168,7 +171,7 @@
     function openLB(index) {
       current = index;
       var p = projects[index];
-      lbImg.src = 'https://picsum.photos/seed/' + p.seed + '/1200/900';
+      lbImg.src = '' + __lf(p.seed, 1200, 900) + '';
       lbImg.alt = p.title;
       lbCap.textContent = catLabel[p.cat] + ' · ' + p.title;
       lb.hidden = false;
